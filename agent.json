@@ -1,0 +1,16 @@
+{
+  "id": "discord-command-center",
+  "name": "Discord Command Center",
+  "description": "Private Discord operations agent for managing, searching, summarizing, and administering the Discord servers available to the owner's bot.",
+  "storeType": "agent",
+  "category": "operations",
+  "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "template": "worker",
+  "serverConfig": {
+    "durableObject": true,
+    "routes": [
+      "discord-command-center.proagentstore.online/*"
+    ],
+    "aiBilling": "caller-provided"
+  }
+}
